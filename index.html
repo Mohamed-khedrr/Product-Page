@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Product Page</title>
+
+</head>
+
+<body>
+
+  <!-- ================== nav ================== -->
+
+  <nav>
+    <div class="nav-container flex  align-center">
+
+      <div class="left-section flex">
+        <div class="menu-icon flex align-center justify-center hidden">
+          <a class="decoration-none"><img src="assets/images/icon-menu.svg"></a>
+        </div>
+        <h2 class="logo">Sneakers</h2>
+        <div id="side-bar-overlay" class="overlay flex align-center">
+        </div>
+        <ul class="side-bar ">
+          <li><a id="side-bar-close" href="#"><img id="side-bar-close-img" src="assets/images/icon-close.svg"></a>
+          </li>
+          <li><a href="#">Collections</a></li>
+          <li><a a href="#">Men</a></li>
+          <li><a a href="#">Women</a></li>
+          <li><a a href="#">About</a></li>
+          <li><a a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <ul>
+          <li><a href="#"><img src="assets/images/icon-cart.svg" alt=""></a></li>
+          <li class="user"> <a href="#"><img src="assets/images/image-avatar.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================== -->
+  <section class="product flex ">
+    <div class="left-section w-50  flex">
+      <div class="container ">
+        <div class="main-img">
+          <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="other-imgs flex ">
+          <img src="assets/images/image-product-1.jpg">
+          <img src="assets/images/image-product-2.jpg">
+          <img src="assets/images/image-product-3.jpg">
+          <img src="assets/images/image-product-4.jpg">
+
+        </div>
+      </div>
+    </div>
+    <div class="right-section w-50 ">
+      <div class="container">
+        <h3 class="company-name color-orange">
+          Sneaker Company
+        </h3>
+        <h1 class="title">
+          Fall Limited Edition Sneakers
+        </h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="all-prices">
+          <div class="price-container flex align-center">
+            <span class="price">$125.00</span>
+            <span class="discount color-orange">50%</span>
+          </div>
+          <div class="old-price ">
+            <del>$250.00</del>
+          </div>
+        </div>
+        <div class="count-container flex">
+          <div class="count flex align-center  ">
+            <a href="#" class="decoration-none"><span class="flex align-center"><img src="assets/images/icon-plus.svg"
+                  alt=""></span></a> <span class="items-num">0</span>
+            <a href="#" class="decoration-none"><span class="flex align-center"><img src="assets/images/icon-minus.svg"
+                  alt=""></span></a>
+          </div>
+          <button class="add-cart flex align-center">
+            <img src="assets/images/icon-cart-light.svg">
+            <span>Add to cart</span></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= Script ============= -->
+
+  <script src="assets/js/main.js"> </script>
+
+</body>
+
+</html>
