@@ -41,7 +41,16 @@
       </div>
       <div class="right-section">
         <ul>
-          <li><a href="#"><img src="assets/images/icon-cart.svg" alt=""></a></li>
+          <li>
+            <div class="relative pointer modal-cart-icon"><img src="assets/images/icon-cart.svg" alt="">
+              <div class="cart-modal hidden">
+                <h4 class="cart-modal-heading">Cart</h4>
+                <div class="flex modal-cart-content align-center justify-center">
+                  Your cart is empty
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="user"> <a href="#"><img src="assets/images/image-avatar.png" alt=""></a></li>
         </ul>
       </div>
@@ -53,15 +62,20 @@
     <div class="left-section w-50  flex">
       <div class="container ">
         <div class="main-img">
-          <img src="assets/images/image-product-1-thumbnail.jpg" alt="">
+          <img id="main-img" src="assets/images/image-product-1.jpg" alt="">
         </div>
-        <div class="other-imgs flex ">
-          <img src="assets/images/image-product-1.jpg">
-          <img src="assets/images/image-product-2.jpg">
-          <img src="assets/images/image-product-3.jpg">
-          <img src="assets/images/image-product-4.jpg">
 
+        <div class="other-imgs flex ">
+          <div class="active-img "><img class="sub-img" src="assets/images/image-product-1.jpg">
+          </div>
+          <div><img class="sub-img" src="assets/images/image-product-2.jpg">
+          </div>
+          <div><img class="sub-img" src="assets/images/image-product-3.jpg">
+          </div>
+          <div><img class="sub-img" src="assets/images/image-product-4.jpg">
+          </div>
         </div>
+
       </div>
     </div>
     <div class="right-section w-50 ">
@@ -87,10 +101,10 @@
         </div>
         <div class="count-container flex">
           <div class="count flex align-center  ">
-            <a href="#" class="decoration-none"><span class="flex align-center"><img src="assets/images/icon-plus.svg"
-                  alt=""></span></a> <span class="items-num">0</span>
-            <a href="#" class="decoration-none"><span class="flex align-center"><img src="assets/images/icon-minus.svg"
-                  alt=""></span></a>
+            <a href="#" class="decoration-none"><span class=" plus flex align-center"><img
+                  src="assets/images/icon-plus.svg" alt=""></span></a> <span class="items-num">0</span>
+            <a href="#" class="decoration-none"><span class="minus flex align-center"><img
+                  src="assets/images/icon-minus.svg" alt=""></span></a>
           </div>
           <button class="add-cart flex align-center">
             <img src="assets/images/icon-cart-light.svg">
