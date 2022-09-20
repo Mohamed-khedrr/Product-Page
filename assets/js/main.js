@@ -101,10 +101,16 @@ function checkCart() {
                 <span class="product-num">${productCounter}</span> * fall limited edition Sneakers
                 <span class="total-price">$${productCounter * 125}</span>
             </p>
-            <img class="remove-cart pointer" src="assets/images/icon-delete.svg">
+            <img class="remove-cart  pointer" onclick="removeAllItems()" src="assets/images/icon-delete.svg">
     
         `;
     }
+}
+
+
+function removeAllItems() {
+    productCounter = 0;
+    checkCart();
 }
 
 

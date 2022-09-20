@@ -245,8 +245,8 @@ section.product .title {
   position: absolute;
   width: 250px;
   top: 3rem;
-  left: 50%;
-  transform: translate(-50%);
+  right: 50%;
+  transform: translate(50%);
   border-radius: 0.3rem;
   cursor: context-menu;
   font-size: smaller;
@@ -366,6 +366,8 @@ section.product .left-section .container img {
     position: static;
   }
   .cart-modal {
-    right: 2rem;
+    transform: translate(0);
+    right: 10%;
+    left: 10%;
   }
 }/*# sourceMappingURL=main.css.map */
