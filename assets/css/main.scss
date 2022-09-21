@@ -110,11 +110,12 @@ nav {
         height: 5px;
         bottom: -2.45rem;
         right: 0;
-        transition: 1s;
+        transition: 0.5s;
       }
     }
 
     a:hover {
+      color: #000000;
       &::after {
         background-color: rgba(255, 166, 0, 0.5);
       }
@@ -398,5 +399,9 @@ section.product {
     transform: translate(0);
     right: 10%;
     left: 10%;
+  }
+
+  nav .left-section a::after {
+    position: static;
   }
 }
