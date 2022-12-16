@@ -75,6 +75,9 @@ nav {
 nav {
   padding: 1.5rem 6rem;
 }
+nav .menu-icon img:hover {
+  cursor: pointer;
+}
 nav .nav-container {
   position: relative;
   justify-content: space-between;
@@ -103,6 +106,13 @@ nav a {
 }
 nav .logo {
   margin-right: 2rem;
+}
+nav svg {
+  transition: 0.2s;
+}
+nav svg:hover {
+  fill: #b4b7be;
+  cursor: pointer;
 }
 nav .left-section a {
   margin-right: 1rem;
@@ -192,6 +202,12 @@ section.product .right-section .old-price {
   font-size: smaller;
   margin: 0.2rem 0 1.5rem 0;
 }
+section.product .right-section svg {
+  fill: rgb(241, 123, 44);
+}
+section.product .right-section svg:hover {
+  fill: rgb(247, 164, 109);
+}
 section.product .right-section .add-cart {
   background-color: rgb(241, 123, 44);
   color: #ffffff;
@@ -201,6 +217,10 @@ section.product .right-section .add-cart {
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+section.product .right-section .add-cart:hover {
+  background-color: rgb(248, 167, 113);
 }
 section.product .right-section .add-cart span {
   margin-left: 0.5rem;

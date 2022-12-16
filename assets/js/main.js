@@ -13,7 +13,7 @@ const plusIcon = document.querySelector('.plus');
 const minusIcon = document.querySelector('.minus');
 const modalCartContent = document.querySelector('.modal-cart-content');
 const itemsNum = document.querySelector('.items-num');
-
+const addToCartBtn = document.querySelector('.add-cart');
 //Global Variables 
 let subImgCounter = 1;
 let productCounter = 0;
@@ -78,20 +78,29 @@ function toggleCartIcon() {
 plusIcon.addEventListener('click', increaseProductsNum)
 function increaseProductsNum() {
     productCounter++;
-    checkCart()
+    itemsNum.innerHTML = productCounter;
+
+    // checkCart()
 }
 
 // decrease Products 
 minusIcon.addEventListener('click', decreaseProductsNum)
 function decreaseProductsNum() {
-    productCounter--;
-
-    checkCart()
+    if (productCounter != 0) {
+        productCounter--;
+    }
+    itemsNum.innerHTML = productCounter;
+    // checkCart()
 }
+
+// Add Products to the cart
+addToCartBtn.addEventListener('click', () => {
+    checkCart();
+})
 
 // check cart
 function checkCart() {
-    itemsNum.innerHTML = productCounter;
+    // itemsNum.innerHTML = productCounter;
     if (productCounter == 0) {
         modalCartContent.innerHTML = `Your cart is empty`;
     } else {
