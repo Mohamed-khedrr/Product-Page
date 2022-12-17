@@ -78,7 +78,7 @@ function toggleCartIcon() {
 plusIcon.addEventListener('click', increaseProductsNum)
 function increaseProductsNum() {
     productCounter++;
-    itemsNum.innerHTML = productCounter;
+    itemsNum.value = productCounter;
 
     // checkCart()
 }
@@ -89,7 +89,7 @@ function decreaseProductsNum() {
     if (productCounter != 0) {
         productCounter--;
     }
-    itemsNum.innerHTML = productCounter;
+    itemsNum.value = productCounter;
     // checkCart()
 }
 
