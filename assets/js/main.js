@@ -105,7 +105,7 @@ function checkCart() {
         modalCartContent.innerHTML = `Your cart is empty`;
     } else {
         modalCartContent.innerHTML = `
-        <img class="modal-product-img" src="assets/images/image-product-1.jpg">
+        <img class="modal-product-img" src="assets/images/image-product-1.jpg" alt="product Image">
             <p>
                 <span class="product-num">${productCounter}</span> * fall limited edition Sneakers
                 <span class="total-price">$${productCounter * 125}</span>
@@ -119,6 +119,7 @@ function checkCart() {
 
 function removeAllItems() {
     productCounter = 0;
+    itemsNum.value = 0;
     checkCart();
 }
 
